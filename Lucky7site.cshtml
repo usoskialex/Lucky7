@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Changed Lucky 7</title>
+    <link href="~/LuckyStyle.css" rel="stylesheet" />
+</head>
+<body>
+    @{
+        var rnd = new System.Random();
+
+        var first = rnd.Next(1, 9);
+        var second = rnd.Next(1, 9);
+        var third = rnd.Next(1, 9);
+        <button onclick="history.go(0)">Spin</button>
+        <div>@first</div><div>@second</div><div>@third</div>
+        <br/>
+        <h1>Lucky Seven</h1>
+        if (first == 7 ||
+            second == 7 ||
+            third == 7)
+        {
+            <img src="http://faculty.cascadia.edu/brianb/bit285/exercises/lucky7/LuckySevenExercise.jpg" alt="lucky guys" />
+            <p>Give me some coins man!</p>
+        }
+        <br/>
+        
+    }
+
+
+</body>
+</html>

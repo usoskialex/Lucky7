@@ -1,0 +1,16 @@
+﻿body {
+    background-color: silver;
+}
+
+
+div {
+    display: inline-block;
+    color: Black;
+    background-color: Yellow;
+    border-color: Black;
+    border-width: 2pt;
+    border-style: Solid;
+    font-size: 24pt;
+    font-weight: bold;
+    margin-right: 2px;
+}
